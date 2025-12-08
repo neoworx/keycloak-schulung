@@ -1,6 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="Encoding">
+    <file url="file://$PROJECT_DIR$/extensions/db-user-storage-provider/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/extensions/db-user-storage-provider/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/extensions/session-limiter-listener/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/extensions/session-limiter-listener/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/extensions/src/main/java" charset="UTF-8" />

@@ -14,18 +14,14 @@ import org.keycloak.models.*;
 import java.util.Comparator;
 import java.util.List;
 
-@AutoService(EventListenerProviderFactory.class)
+
 @RequiredArgsConstructor
-public class SessionLimiterListenerProvider implements EventListenerProvider, EventListenerProviderFactory {
+public class SessionLimiterListenerProvider implements EventListenerProvider {
 
     public static final String ID = "akdb-session-limiter-listener";
     public static final int SESSION_COUNT_LIMIT = 2;
 
     private final KeycloakSession keycloakSession;
-
-    public SessionLimiterListenerProvider() {
-        this.keycloakSession = null;
-    }
 
     @Override
     public void onEvent(Event event) {
@@ -53,27 +49,7 @@ public class SessionLimiterListenerProvider implements EventListenerProvider, Ev
     }
 
     @Override
-    public EventListenerProvider create(KeycloakSession keycloakSession) {
-        return new SessionLimiterListenerProvider(keycloakSession);
-    }
-
-    @Override
-    public void init(Config.Scope scope) {
-
-    }
-
-    @Override
-    public void postInit(KeycloakSessionFactory keycloakSessionFactory) {
-
-    }
-
-    @Override
     public void close() {
         // Implementation goes here
-    }
-
-    @Override
-    public String getId() {
-        return ID;
     }
 }
