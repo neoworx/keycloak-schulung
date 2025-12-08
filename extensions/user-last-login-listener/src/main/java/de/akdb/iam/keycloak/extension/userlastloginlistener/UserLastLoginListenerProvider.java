@@ -1,5 +1,6 @@
 package de.akdb.iam.keycloak.extension.userlastloginlistener;
 
+import lombok.RequiredArgsConstructor;
 import org.keycloak.events.Event;
 import org.keycloak.events.EventListenerProvider;
 import org.keycloak.events.EventType;
@@ -8,14 +9,10 @@ import org.keycloak.models.KeycloakSession;
 import org.keycloak.models.RealmModel;
 import org.keycloak.models.UserModel;
 
-
+@RequiredArgsConstructor
 public class UserLastLoginListenerProvider implements EventListenerProvider {
 
-    private KeycloakSession keycloakSession;
-
-    public UserLastLoginListenerProvider(KeycloakSession keycloakSession) {
-        this.keycloakSession = keycloakSession;
-    }
+    private final KeycloakSession keycloakSession;
 
     @Override
     public void onEvent(Event event) {

@@ -1,11 +1,13 @@
 package de.akdb.iam.keycloak.extension.userlastloginlistener;
 
+import com.google.auto.service.AutoService;
 import org.keycloak.Config;
 import org.keycloak.events.EventListenerProvider;
 import org.keycloak.events.EventListenerProviderFactory;
 import org.keycloak.models.KeycloakSession;
 import org.keycloak.models.KeycloakSessionFactory;
 
+@AutoService(EventListenerProviderFactory.class)
 public class UserLastLoginListenerProviderFactory implements EventListenerProviderFactory {
 
     public static final String ID = "akdb-user-last-login-listener";
