@@ -3,6 +3,7 @@ package de.akdb.iam.keycloak.extension.sessionlimiterlistener;
 import com.google.auto.service.AutoService;
 import lombok.NoArgsConstructor;
 import lombok.RequiredArgsConstructor;
+import lombok.extern.jbosslog.JBossLog;
 import org.keycloak.Config;
 import org.keycloak.events.Event;
 import org.keycloak.events.EventListenerProvider;
@@ -14,7 +15,7 @@ import org.keycloak.models.*;
 import java.util.Comparator;
 import java.util.List;
 
-
+@JBossLog
 @RequiredArgsConstructor
 public class SessionLimiterListenerProvider implements EventListenerProvider {
 
@@ -38,7 +39,7 @@ public class SessionLimiterListenerProvider implements EventListenerProvider {
                 sortedSessions.stream()
                         .limit(sortedSessions.size() - SESSION_COUNT_LIMIT)
                         .forEach(userSession -> this.keycloakSession.sessions().removeUserSession(realm, userSession));
-                System.out.println("Removed " + sessionsToBeRemoved + " sessions for user: " + user.getUsername());
+                log.infof("User %s exceeded session limit. Removed %d oldest sessions.", user.getId(), sessionsToBeRemoved);
             }
         }
     }
