@@ -3,12 +3,18 @@
   <component name="Encoding">
     <file url="file://$PROJECT_DIR$/extensions/db-user-storage-provider/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/extensions/db-user-storage-provider/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/extensions/saml-attribute-protocol-mapper/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/extensions/saml-attribute-protocol-mapper/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/extensions/saml-personalnummer-identity-provider-mapper/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/extensions/saml-personalnummer-identity-provider-mapper/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/extensions/session-limiter-listener/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/extensions/session-limiter-listener/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/extensions/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/extensions/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/extensions/user-last-login-listener/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/extensions/user-last-login-listener/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/saml/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/saml/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/src/main/resources" charset="UTF-8" />
   </component>
