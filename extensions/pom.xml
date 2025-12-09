@@ -14,6 +14,7 @@
     <modules>
         <module>user-last-login-listener</module>
         <module>session-limiter-listener</module>
+        <module>saml-attribute-protocol-mapper</module>
     </modules>
 
     <dependencies>
