@@ -16,6 +16,7 @@
         <module>session-limiter-listener</module>
         <module>saml-attribute-protocol-mapper</module>
         <module>saml-personalnummer-identity-provider-mapper</module>
+        <module>scheduler-task-spi</module>
     </modules>
 
     <dependencies>

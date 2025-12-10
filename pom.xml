@@ -10,6 +10,7 @@
     <packaging>pom</packaging>
     <modules>
         <module>extensions</module>
+        <module>admin-client</module>
     </modules>
 
     <properties>
